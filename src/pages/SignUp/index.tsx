@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import React from 'react';
 
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
+import { FiArrowLeft, FiMail, FiLock, FiUser } from 'react-icons/fi';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -10,13 +10,16 @@ import Button from '../../components/Button';
 
 import { Background, Container, Content } from './styles';
 
-const SignIn: React.FC = () => (
+const SignUp: React.FC = () => (
     <Container>
+        <Background />
+
         <Content>
             <img src={logoImg} alt="GoBarber" />
 
             <form>
                 <h1>Login</h1>
+                <Input name="name" icon={FiUser} placeholder="Name" />
                 <Input name="email" icon={FiMail} placeholder="E-mail" />
                 <Input
                     name="password"
@@ -26,17 +29,14 @@ const SignIn: React.FC = () => (
                 />
 
                 <Button type="submit">Enter</Button>
-                <a href="forgot">Forgot my password</a>
             </form>
 
-            <a href="register">
-                <FiLogIn />
-                Register
+            <a href="login">
+                <FiArrowLeft />
+                Back to login page
             </a>
         </Content>
-
-        <Background />
     </Container>
 );
 
-export default SignIn;
+export default SignUp;
