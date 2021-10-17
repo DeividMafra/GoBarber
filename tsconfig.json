@@ -21,6 +21,8 @@
         "jsx": "react"
     },
     "include": [
-        "./src/**/*.ts"
-    ]
+        "./src/**/*.ts",
+        "src/hooks/auth.tsx",
+        "src/@types/custom.d.ts"
+       ]
 }
