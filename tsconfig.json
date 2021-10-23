@@ -23,6 +23,7 @@
     "include": [
         "./src/**/*.ts",
         "src/hooks/auth.tsx",
-        "src/@types/custom.d.ts"
+        "src/@types/custom.d.ts",
+        "src/__tests__/pages/Signin.spec.tsx",
        ]
 }
